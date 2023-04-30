@@ -1,0 +1,24 @@
+// DITA SEKAR AYU ATMADI (227064516149)
+// TASYA AURELIA (227064516146)
+// PRIESMA WIYADHIKA (227064516113)
+
+package tugas1;
+public class no2 {
+    
+    public static void main(String[] args) {
+    
+    String[] nama = {"Ucup", "Otong", "Budi"};
+    int[] uts = {80, 70, 90};
+    int[] uas = {80, 85, 80};
+
+    System.out.println("No\tNAMA\tUTS\tUAS\tTOTAL\tRATA-RATA");
+    System.out.println("*************************************************");
+
+    for (int i = 0; i < nama.length; i++) {
+      int total = uts[i] + uas[i];
+      double rata2 = total / 2.0;
+
+      System.out.printf("%d\t%s\t%d\t%d\t%d\t%.1f\n", i+1, nama[i], uts[i], uas[i], total, rata2);
+    }
+  }
+}
