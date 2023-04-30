@@ -1,0 +1,50 @@
+// DITA SEKAR AYU ATMADI (227064516149)
+// TASYA AURELIA (227064516146)
+// PRIESMA WIYADHIKA (227064516113)
+package tugas1;
+
+import java.util.Scanner;
+
+public class cobaa {
+
+  
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+          
+          //Menginput Jumlah Mahasiswa yang akan dicoba
+          System.out.print("Masukan Jumlah Mahasiswa : ");
+          int jumlahMahasiswa = input.nextInt();
+          
+          //array untuk menyimpan nama dan nilai mahasiswa
+          String[] NamaMahasiswa = new String[jumlahMahasiswa];
+          double[] NilaiMahasiswa = new double[jumlahMahasiswa];
+          double totalNilaiMahasiswa = 0;
+          
+          //meminta inputan nama dan nilai mahasiswa sebanyak jumlah mahasiswa
+          //yang akan di input
+          
+          for (int i = 0; i < jumlahMahasiswa; i++){
+              System.out.print(+i+1+". Masukkan Nama Mahasiswa : ");
+              NamaMahasiswa[i] = input.next();
+              System.out.print("Masukkan Nilai Mahasiswa : " );
+              NilaiMahasiswa[i] = input.nextDouble();
+              
+              //Menambahkan nilai mahasiswa ke total nilai mahasiswa
+              totalNilaiMahasiswa += NilaiMahasiswa[i];
+           }
+          
+          //Menghitung rata rata nilai mahasiswa
+          double rataRataNilaiMahasiswa = totalNilaiMahasiswa / jumlahMahasiswa;
+          
+          System.out.println("");
+          
+          //Menampilkan Hasil total nilai dan rata-rata
+          System.out.println("Total Nilai Mahasiswa : " + totalNilaiMahasiswa);
+          System.out.println("Rata Rata Nilai Mahasiswa : " + rataRataNilaiMahasiswa);
+          
+          System.out.println("");
+          
+    }
+    
+}
+    
